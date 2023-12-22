@@ -46,13 +46,22 @@ python中的下标是从0开始的，但是不要越界
 IndexError：string index out of range 表示程序越界
 #字符串常见操作
 #find   rfind  count index rinde
- replace title startwith endwith lower upper len ljust(向左显示) rjust(向右显示) center
-#strip(删除字符串中的空格) partition rpatition splitlines(切除换行)  isalpha(判断是不是都是字母，只要有非字母就是false)
+replace :用新字符串替换旧字符串,new_sentence = sentence.replace("world", "Python")
+title ：返回字符串的标题版本，即每个单词的首字母都大写，title_text = text.title()
+startwith endwith ：用于检查字符串是否以指定的前缀（prefix）或后缀（suffix）开始或结束。
+lower：将字符串转换为小写。
+upper： 将字符串转换为大写。
+len： 返回字符串的长度，即包含的字符数。
+ljust(向左显示) rjust(向右显示) center：ljust(width[, fillchar]), rjust(width[, fillchar]), 和 center(width[, fillchar]): 分别用于向左、向右或居中对齐字符串，根据指定的宽度 width。left_aligned = text.ljust(10, "*")
+#strip(删除字符串中的空格) 
+partition rpatition splitlines(切除换行)  isalpha(判断是不是都是字母，只要有非字母就是false)
 #isdigit(判断输入是否是纯数字) isalnum(数字和字母组合的返回true)  isspace(只包含空格，返回true，否则返回false)
 #join(连接字符串)
 
 #切片
 name[m:n:步长]从m开始，不包含n，到那时n数写的很大，也不存在越界问题，这个很好。
+字符串切片是指从字符串中获取一部分子串的操作。
+substring = text[::-1]
 
 #列表list  [ ]
 一个变量只能存一个值，然后列表可以存很多值，Python的列表可以保存n个数据，并且数据类型可以是不同类型，列表里面的每个称为元素。
